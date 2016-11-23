@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Лизунов](https://up.htmlacademy.ru/adaptive/9/user/221661).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Бухвалова](https://up.htmlacademy.ru/adaptive/9/user/114660).
 
 ---
 
