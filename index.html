@@ -11,7 +11,9 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
           <div class="main-nav__logo">
-            <img src="http://placehold.it/75x22" alt="pink-logo" width="75" height="22">
+            <a class="main-nav__logo-link">
+              <img src="http://placehold.it/75x22" alt="pink-logo" width="75" height="22">
+            </a>
           </div>
 
           <button class="main-nav__toggle">Открыть меню</button>
@@ -19,9 +21,9 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </nav>
 
@@ -34,7 +36,7 @@
       <section class="download">
         <h2 class="download__title  visually-hidden">Загрузка "Pink"</h2>
 
-        <div class="download__wrapper">
+        <div class="download__inner">
           <a href="#" class="download__store-link  rounded-button  rounded-button--white">Скачать приложение</a>
 
           <ul class="download__list">
@@ -50,7 +52,7 @@
       <section class="advantages">
         <h2 class="advantages__title  visually-hidden">О приложении</h2>
 
-        <div class="advantages__wrapper">
+        <div class="advantages__inner">
           <p class="advantages__tagline">
             <span class="advantages__tagline-text">Устали от серости мегаполиса?</span>
             <span class="advantages__tagline-text">Нам есть, что вам предложить!</span>
@@ -82,7 +84,7 @@
       <section class="reviews">
         <h2 class="reviews__title  visually-hidden">Отзывы</h2>
 
-        <div class="reviews__wrapper  reviews__slider">
+        <div class="reviews__inner  reviews__slider">
           <blockquote class="reviews__item">
             <cite class="reviews__author">Николай Петров</cite>
             <p class="reviews__text">
@@ -105,7 +107,7 @@
         <div class="price__slider">
           <table class="price__table">
             <tr>
-              <td class="price__title price__title--popular">
+              <td class="price__name  price__name--popular">
                 <span class="price__package">Стандарт</span>
                 <span class="price__total">3,99 USD</span>
               </td>
@@ -134,23 +136,25 @@
       <section class="contacts">
         <h2 class="contacts__title  visually-hidden">Контакты</h2>
 
-        <div class="contacts__wrapper">
+        <div class="contacts__inner">
           <p class="contacts__tagline">Остались вопросы? Свяжитесь с нами!</p>
 
-          <div class="contacts__item">
-            <span class="contacts__item-heading">Звоните:</span>
-            <a class="contacts__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-heading">Звоните:</h3>
+              <a class="contacts__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
 
-          <div class="contacts__item">
-            <span class="contacts__item-heading">Пишите:</span>
-            <a class="contacts__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
+            <li class="contacts__item">
+              <h3 class="contacts__item-heading">Пишите:</h3>
+              <a class="contacts__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
 
-          <div class="contacts__item">
-            <span class="contacts__item-heading">Приезжайте в гости:</span>
-            <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
-          </div>
+            <li class="contacts__item">
+              <h3 class="contacts__item-heading">Приезжайте в гости:</h3>
+              <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
+            </li>
+          </ul>
         </div>
 
         <div class="contacts__map"></div>
