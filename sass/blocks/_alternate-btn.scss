@@ -1,0 +1,19 @@
+.alternate-btn {
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  text-decoration: none;
+
+  &--download {
+    color: #ffffff;
+  }
+
+  &--post {
+    color: $primary;
+  }
+
+  &--cancel {
+    color: rgba($primary-dark, 0.1);
+  }
+}

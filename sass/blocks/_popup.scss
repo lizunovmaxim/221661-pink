@@ -1,0 +1,7 @@
+.popup__inner {
+  @include container;
+}
+
+.popup__btn-wrapper {
+  background-color: $primary-light;
+}

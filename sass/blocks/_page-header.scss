@@ -1,0 +1,7 @@
+.page-header {
+  background: #2c3949 url("../img/bg-back-mobile@1x.jpg") center / cover;
+}
+
+.page-header__inner-title {
+  @include container;
+}

@@ -1,0 +1,22 @@
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__inner {
+  @include container;
+}
+
+.main-nav__list {
+  @include unlist;
+}
+
+.main-nav__link {
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}

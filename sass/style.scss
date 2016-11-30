@@ -1,0 +1,26 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "global/normalize";
+@import "global/fonts";
+@import "global/base";
+
+@import "blocks/advantages";
+@import "blocks/alternate-btn";
+@import "blocks/btn";
+@import "blocks/contacts";
+@import "blocks/contest";
+@import "blocks/contest-form";
+@import "blocks/download";
+@import "blocks/feed";
+@import "blocks/main-nav";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/photo-editor";
+@import "blocks/popup";
+@import "blocks/price";
+@import "blocks/reviews";
+@import "blocks/slider-controls";
+@import "blocks/social";
+@import "blocks/upload";
+@import "blocks/visually-hidden";

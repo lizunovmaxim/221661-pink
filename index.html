@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +13,7 @@
         <div class="main-nav__inner">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link">
-              <img src="http://placehold.it/75x22" alt="pink-logo" width="75" height="22">
+              <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="22">
             </a>
           </div>
 
@@ -20,15 +21,23 @@
         </div>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
         </ul>
       </nav>
 
       <div class="page-header__demo-image">
-        <img src="http://placehold.it/320x268" alt="pink-demo" width="320" height="268">
+        <img src="img/iphone-hand-mobile@1x.png" alt="pink-demo" width="258" height="286">
       </div>
     </header>
 
@@ -37,12 +46,18 @@
         <h2 class="download__title  visually-hidden">Загрузка "Pink"</h2>
 
         <div class="download__inner">
-          <a href="#" class="download__store-link  alternate-btn  alternate-btn--download">Скачать приложение</a>
+          <a href="#" class="download__default-link  alternate-btn  alternate-btn--download">Скачать приложение</a>
 
           <ul class="download__list">
-            <li class="download__item"><a class="download-link  download-link--apple" href="#">Для Apple</a></li>
-            <li class="download__item"><a class="download-link  download-link--android" href="#">Для Android</a></li>
-            <li class="download__item"><a class="download-link  download-link--windows" href="#">Для Windows</a></li>
+            <li class="download__item">
+              <a class="download__link  download__link--apple" href="#">Для Apple</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link  download__link--android" href="#">Для Android</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link  download__link--windows" href="#">Для Windows</a>
+            </li>
           </ul>
 
           <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -52,12 +67,14 @@
       <section class="advantages">
         <h2 class="advantages__title  visually-hidden">О приложении</h2>
 
-        <div class="advantages__inner">
+        <div class="advantages__tagline-wrapper">
           <p class="advantages__tagline">
             <span class="advantages__tagline-text">Устали от серости мегаполиса?</span>
             <span class="advantages__tagline-text">Нам есть, что вам предложить!</span>
           </p>
+        </div>
 
+        <div class="advantages__list-wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__item-heading">Поднимает настроение</h3>

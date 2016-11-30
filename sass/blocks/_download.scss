@@ -1,0 +1,16 @@
+.download {
+  background-color: #1d2631;
+}
+
+.download__inner {
+  @include container;
+}
+
+.download__list {
+  @include unlist;
+}
+
+.download__description {
+  font-weight: 300;
+  color: #ffffff;
+}
