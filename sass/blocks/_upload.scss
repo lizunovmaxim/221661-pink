@@ -1,0 +1,12 @@
+.upload__call-text {
+  @include container;
+  line-height: 30px;
+}
+
+.upload__inner {
+  background-color: $primary-light;
+}
+
+.upload__form {
+  @include container;
+}

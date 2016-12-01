@@ -1,0 +1,65 @@
+.contest-form__text-label {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.contest-form__text-field {
+  font-size: 18px;
+  line-height: 30px;
+
+  &::-webkit-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &::-moz-placeholder {
+    color: $primary-dark;
+  }
+
+  &:-ms-input-placeholder {
+    color: $primary-dark;
+  }
+}
+
+.contest-form__legend {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.contest-form__checkbox-label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__radio-label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__textarea {
+  font-size: 18px;
+  line-height: 30px;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &::-moz-placeholder {
+    color: $primary-dark;
+  }
+
+  &:-ms-input-placeholder {
+    color: $primary-dark;
+  }
+}
+
+.contest-form__asterisk {
+  color: $primary;
+}
+
+.contest-form__required-fields {
+  line-height: 30px;
+  text-transform: uppercase;
+}

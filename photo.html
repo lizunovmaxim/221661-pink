@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк - Фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +11,7 @@
         <div class="main-nav__inner">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link" href="index.html">
-              <img src="http://placehold.it/75x22" alt="pink-logo" width="75" height="22">
+              <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="22">
             </a>
           </div>
 
@@ -18,10 +19,18 @@
         </div>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
         </ul>
       </nav>
 
@@ -38,7 +47,7 @@
       <ul class="feed__list">
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/320x137" alt="bridge" width="320" height="137">
+            <img src="img/panorama-mobile@1x.jpg" alt="bridge" width="320" height="137">
           </a>
 
           <p class="feed__author">
@@ -56,14 +65,13 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="car" width="280" height="180">
+            <img src="img/photo-1-mobile@1x.jpg" alt="car" width="280" height="180">
           </a>
 
           <p class="feed__author">
             Левон
             <span class="feed__time">(5 часов назад)</span>
           </p>
-
 
           <p class="feed__message">
             Вчера он на луну летал, сегодня в руки к нам попал.
@@ -74,7 +82,7 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="drums" width="280" height="180">
+            <img src="img/photo-2-mobile@1x.jpg" alt="drums" width="280" height="180">
           </a>
 
           <p class="feed__author">
@@ -91,7 +99,7 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="architecture" width="280" height="180">
+            <img src="img/photo-3-mobile@1x.jpg" alt="architecture" width="280" height="180">
           </a>
 
           <p class="feed__author">
@@ -108,7 +116,7 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="melons" width="280" height="180">
+            <img src="img/photo-4-mobile@1x.jpg" alt="melons" width="280" height="180">
           </a>
 
           <p class="feed__author">
@@ -125,7 +133,7 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="mountain" width="280" height="180">
+            <img src="img/photo-5-mobile@1x.jpg" alt="mountain" width="280" height="180">
           </a>
 
           <p class="feed__author">
@@ -142,7 +150,7 @@
 
         <li class="feed__item">
           <a class="feed__image" href="#">
-            <img src="http://placehold.it/280x180" alt="aircraft" width="280" height="180">
+            <img src="img/photo-6-mobile@1x.jpg" alt="aircraft" width="280" height="180">
           </a>
 
           <p class="feed__author">
@@ -171,10 +179,10 @@
         <form class="upload__form" action="#" method="post">
           <div class="photo-editor">
             <div class="photo-editor__image">
-              <img src="http://placehold.it/280x374" alt="road" width="280" height="374">
+              <img src="img/photo-7-mobile@1x.jpg" alt="road" width="280" height="374">
             </div>
 
-            <div class="photo-editor__buttons">
+            <div class="photo-editor__controls">
               <button class="photo-editor__btn  photo-editor__btn--crop" type="button"></button>
               <button class="photo-editor__btn  photo-editor__btn--fill" type="button"></button>
               <button class="photo-editor__btn  photo-editor__btn--contrast" type="button"></button>
@@ -195,14 +203,20 @@
       <div class="page-footer__inner">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <img src="http://placehold.it/147x40" alt="pink-logo" width="147" height="40">
+            <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo" width="147" height="40">
           </a>
         </div>
 
         <ul class="page-footer__social  social">
-          <li class="social__item"><a class="social__link  social__link--twitter" href="#">Twitter</a></li>
-          <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
-          <li class="social__item"><a class="social__link  social__link--youtube" href="#">Youtube</a></li>
+          <li class="social__item">
+            <a class="social__link  social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube" href="#">Youtube</a>
+          </li>
         </ul>
 
         <div class="page-footer__copyright">

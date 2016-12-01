@@ -1,0 +1,25 @@
+.advantages__tagline {
+  @include container;
+}
+
+.advantages__list-wrapper {
+  background: $primary-light url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
+}
+
+.advantages__list {
+  @include unlist;
+  @include container;
+}
+
+.advantages__tagline-text {
+  font: {
+    size: 24px;
+    weight: 300;
+  }
+  line-height: 29px;
+}
+
+.advantages__item-heading {
+  line-height: 24px;
+  color: #000000;
+}

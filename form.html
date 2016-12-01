@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк - Конкурс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +11,7 @@
         <div class="main-nav__inner">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link" href="index.html">
-              <img src="http://placehold.it/75x22" alt="pink-logo" width="75" height="22">
+              <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="22">
             </a>
           </div>
 
@@ -18,10 +19,18 @@
         </div>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
         </ul>
       </nav>
 
@@ -32,7 +41,7 @@
       <section class="contest">
         <h2 class="contest__title  visually-hidden">Анкета для конкурса</h2>
 
-        <p class="contest__promo-text  contest__inner">
+        <p class="contest__promo-text">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
 
@@ -106,14 +115,14 @@
           <fieldset class="contest-form__fieldset">
             <ul class="contest-form__list">
               <li class="contest-form__item">
-                <label class="contest-form__text-field" for="phone">Номер телефона</label>
-                <input class="contest-form__text-label" id="phone" type="tel" name="phone-number"
+                <label class="contest-form__text-label" for="phone">Номер телефона</label>
+                <input class="contest-form__text-field" id="phone" type="tel" name="phone-number"
                   placeholder="Номер пожалуйста">
               </li>
 
               <li class="contest-form__item">
-                <label class="contest-form__text-field" for="email">Адресок почты</label>
-                <input class="contest-form__text-label" id="email" type="email" name="email"
+                <label class="contest-form__text-label" for="email">Адресок почты</label>
+                <input class="contest-form__text-field" id="email" type="email" name="email"
                   placeholder="Введите почту*" required>
               </li>
             </ul>
@@ -153,7 +162,7 @@
           <div class="contest-form__btn-wrapper">
             <button class="contest-form__btn  btn" type="submit">Отправить форму</button>
 
-            <p class="contest-form__required-fields"><span>*</span> — обязательные поля</p>
+            <p class="contest-form__required-fields"><span class="contest-form__asterisk">*</span> — обязательные поля</p>
           </div>
         </form>
       </section>
@@ -163,14 +172,20 @@
       <div class="page-footer__inner">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <img src="http://placehold.it/147x40" alt="pink-logo" width="147" height="40">
+            <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo" width="147" height="40">
           </a>
         </div>
 
         <ul class="page-footer__social  social">
-          <li class="social__item"><a class="social__link  social__link--twitter" href="#">Twitter</a></li>
-          <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
-          <li class="social__item"><a class="social__link  social__link--youtube" href="#">Youtube</a></li>
+          <li class="social__item">
+            <a class="social__link  social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube" href="#">Youtube</a>
+          </li>
         </ul>
 
         <div class="page-footer__copyright">

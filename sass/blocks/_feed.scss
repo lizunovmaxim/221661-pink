@@ -1,0 +1,35 @@
+.feed__call-text {
+  @include container;
+}
+
+.feed__list {
+  @include unlist;
+}
+
+.feed__item {
+  @include container;
+  background-color: $primary-light;
+  background-clip: content-box;
+}
+
+.feed__call-text {
+  line-height: 30px;
+}
+
+.feed__author {
+  font-weight: 700;
+}
+
+.feed__time {
+  font: {
+    size: 12px;
+    weight: 300;
+  }
+  text-transform: uppercase;
+}
+
+.feed__like {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $primary;
+}

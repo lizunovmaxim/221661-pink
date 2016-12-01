@@ -1,0 +1,31 @@
+.contacts__inner {
+  @include container;
+}
+
+.contacts__list {
+  @include unlist;
+}
+
+.contacts__map {
+  background: #eae6dd url("../img/bg-map-mobile@1x.png") bottom;
+  width: 100%;
+  min-height: 220px;
+}
+
+.contacts__tagline {
+  font: {
+    size: 24px;
+    weight: 300;
+  }
+  line-height: 29px;
+}
+
+.contacts__item-text {
+  font: {
+    size: 24px;
+    weight: 300;
+  }
+  line-height: 29px;
+  text-decoration: none;
+  color: $primary;
+}

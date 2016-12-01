@@ -1,0 +1,31 @@
+.price {
+  background-color: $primary-light;
+}
+
+.price__name {
+  background-color: $primary-dark;
+}
+
+.price__package {
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.price__total {
+  font: {
+    size: 24px;
+    weight: 300
+  }
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.price__option {
+  line-height: 30px;
+  text-transform: uppercase;
+}

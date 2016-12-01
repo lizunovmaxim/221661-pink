@@ -1,0 +1,30 @@
+.contest__promo-text {
+  @include container;
+}
+
+.contest-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  @include container;
+}
+
+.contest-form__list {
+  @include unlist;
+}
+
+.contest-form__fieldset-wrapper {
+  background-color: $primary-light;
+}
+
+.contest-form__textarea {
+  width: 100%;
+}
+
+.contest-form__btn-wrapper {
+  @include container;
+}
+
+.contest__promo-text {
+  line-height: 30px;
+}

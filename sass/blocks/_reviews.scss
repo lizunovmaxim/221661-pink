@@ -1,0 +1,21 @@
+.reviews__inner {
+  @include container;
+}
+
+.reviews__author {
+  font: {
+    size: 18px;
+    weight: 700;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #000000;
+}
+
+.reviews__text {
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
