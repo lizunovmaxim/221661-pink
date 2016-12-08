@@ -1,6 +1,5 @@
 body {
-  margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   font: {
     family: "Open Sans", "Arial", sans-serif;
     size: 14px;
@@ -8,6 +7,14 @@ body {
   }
   line-height: 24px;
   color: $primary-dark;
+
+  @include tablet {
+    min-width: 700px;
+  }
+
+  @include desktop {
+    min-width: 980px;
+  }
 }
 
 h1 {
@@ -25,4 +32,9 @@ h3 {
     weight: 700;
   }
   line-height: 23px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,30 +1,33 @@
-.contest__promo-text {
-  @include container;
-}
+.contest {
+  padding-top: 45px;
 
-.contest-form__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-  @include container;
-}
-
-.contest-form__list {
-  @include unlist;
-}
-
-.contest-form__fieldset-wrapper {
-  background-color: $primary-light;
-}
-
-.contest-form__textarea {
-  width: 100%;
-}
-
-.contest-form__btn-wrapper {
-  @include container;
+  @include tablet {
+    padding-top: 92px;
+  }
 }
 
 .contest__promo-text {
+  @include container;
+
+  margin-bottom: 34px;
   line-height: 30px;
+  text-align: center;
+
+  &--extend {
+    display: none;
+  }
+
+  @include tablet {
+    width: 500px;
+    margin-bottom: 71px;
+    font-size: 18px;
+
+    &--extend {
+      display: inline;
+    }
+  }
+
+  @include desktop {
+    width: 770px;
+  }
 }

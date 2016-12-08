@@ -1,7 +1,98 @@
-.page-footer__inner {
-  @include container;
+.page-footer {
+  &--photo {
+    margin-top: -15px;
+  }
+
+  @include tablet {
+    &--photo {
+      margin-top: -49px;
+    }
+  }
+
+  @include desktop {
+    &--photo {
+      margin-top: 27px;
+    }
+  }
 }
 
-.page-footer__copyright-text {
-  line-height: 18px;
+.page-footer__inner {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 41px;
+
+  &--main-page {
+    display: none;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 85px;
+    padding-bottom: 37px;
+  }
+
+  @include desktop {
+    padding-top: 70px;
+    padding-bottom: 72px;
+
+    &--main-page {
+      display: flex;
+    }
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 39px;
+  line-height: 0;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__social {
+  @include tablet {
+    margin-top: 4px;
+    margin-right: 20px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    margin-left: 14px;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 34px;
+
+  @include tablet {
+    margin-top: 10px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.page-footer__copyright-link {
+  position: relative;
+  display: block;
+  padding: 8px 37px 6px 0;
+  text-decoration: none;
+  color: $primary-dark;
+  background: url("../img/htmlacademy.svg") no-repeat 94px 2px / 41px;
+
+  @include desktop {
+    background-position-x: 121px;
+  }
+}
+
+.page-footer__copyright-extend {
+  font-size: 0;
 }

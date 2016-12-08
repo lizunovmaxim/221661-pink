@@ -2,37 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк - Фотографии</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <div class="main-nav__inner">
-          <div class="main-nav__logo">
-            <a class="main-nav__logo-link" href="index.html">
+    <header class="page-header  page-header--inner-page">
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__inner">
+            <a class="main-nav__logo" href="index.html">
               <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="22">
             </a>
+
+            <button class="main-nav__toggle">Открыть меню</button>
           </div>
 
-          <button class="main-nav__toggle">Открыть меню</button>
-        </div>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <h1 class="page-header__inner-title">Фотографии пользователей</h1>
     </header>
@@ -45,124 +46,138 @@
       </p>
 
       <ul class="feed__list">
-        <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/panorama-mobile@1x.jpg" alt="bridge" width="320" height="137">
+        <li class="feed__item  feed__item--popular">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image  feed__image--popular" src="img/panorama-mobile@1x.jpg" alt="bridge" width="320" height="137">
           </a>
 
-          <p class="feed__author">
-            Анна
-            <span class="feed__time">(5 минут назад)</span>
-          </p>
+          <div class="feed__item-inner  feed__item-inner--popular">
+            <p class="feed__author">
+              Анна
+              <span class="feed__time">(5 минут назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
-            задавайте свои вопросы!
-          </p>
+            <p class="feed__message  feed__message--popular">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+              задавайте свои вопросы!
+            </p>
 
-          <span class="feed__like">Нравится: 215</span>
+            <span class="feed__like  feed__like--popular">Нравится: 215</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-1-mobile@1x.jpg" alt="car" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-1-mobile@1x.jpg" alt="car" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Левон
-            <span class="feed__time">(5 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Левон
+              <span class="feed__time">(5 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
+            <p class="feed__message">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
 
-          <span class="feed__like">Нравится: 356</span>
+            <span class="feed__like">Нравится: 356</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-2-mobile@1x.jpg" alt="drums" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-2-mobile@1x.jpg" alt="drums" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Антон
-            <span class="feed__time">(12 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Антон
+              <span class="feed__time">(12 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Соседи будут рады!
-          </p>
+            <p class="feed__message">
+              Соседи будут рады!
+            </p>
 
-          <span class="feed__like">Нравится: 666</span>
+            <span class="feed__like">Нравится: 666</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-3-mobile@1x.jpg" alt="architecture" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-3-mobile@1x.jpg" alt="architecture" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Борис
-            <span class="feed__time">(20 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Борис
+              <span class="feed__time">(20 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </p>
+            <p class="feed__message">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
 
-          <span class="feed__like">Нравится: 215</span>
+            <span class="feed__like">Нравится: 215</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-4-mobile@1x.jpg" alt="melons" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-4-mobile@1x.jpg" alt="melons" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Сергей
-            <span class="feed__time">(25 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Сергей
+              <span class="feed__time">(25 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Самая кубанская в мире!
-          </p>
+            <p class="feed__message">
+              Самая кубанская в мире!
+            </p>
 
-          <span class="feed__like">Нравится: 4</span>
+            <span class="feed__like">Нравится: 4</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-5-mobile@1x.jpg" alt="mountain" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-5-mobile@1x.jpg" alt="mountain" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Максим
-            <span class="feed__time">(40 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Максим
+              <span class="feed__time">(40 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Где снег-то?
-          </p>
+            <p class="feed__message">
+              Где снег-то?
+            </p>
 
-          <span class="feed__like">Нравится: 150</span>
+            <span class="feed__like">Нравится: 150</span>
+          </div>
         </li>
 
         <li class="feed__item">
-          <a class="feed__image" href="#">
-            <img src="img/photo-6-mobile@1x.jpg" alt="aircraft" width="280" height="180">
+          <a class="feed__image-link" href="#">
+            <img class="feed__image" src="img/photo-6-mobile@1x.jpg" alt="aircraft" width="280" height="180">
           </a>
 
-          <p class="feed__author">
-            Надежда
-            <span class="feed__time">(45 часов назад)</span>
-          </p>
+          <div class="feed__item-inner">
+            <p class="feed__author">
+              Надежда
+              <span class="feed__time">(45 часов назад)</span>
+            </p>
 
-          <p class="feed__message">
-            Всем GM и взаимные лайки!
-          </p>
+            <p class="feed__message">
+              Всем GM и взаимные лайки!
+            </p>
 
-          <span class="feed__like">Нравится: 2560</span>
+            <span class="feed__like">Нравится: 2560</span>
+          </div>
         </li>
       </ul>
     </section>
@@ -171,35 +186,53 @@
       <h2 class="upload__title  visually-hidden">Отправка фотографии</h2>
 
       <p class="upload__call-text">
-        Затмите их всех!
+        Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!
       </p>
 
       <div class="upload__inner">
         <form class="upload__form" action="#" method="post">
           <div class="photo-editor">
-            <div class="photo-editor__image">
-              <img src="img/photo-7-mobile@1x.jpg" alt="road" width="280" height="374">
+            <div class="photo-editor__viewport">
+              <img class="photo-editor__image" src="img/photo-7-mobile@1x.jpg" alt="road" width="280" height="374">
             </div>
 
-            <div class="photo-editor__controls">
-              <button class="photo-editor__btn  photo-editor__btn--crop" type="button"></button>
-              <button class="photo-editor__btn  photo-editor__btn--fill" type="button"></button>
-              <button class="photo-editor__btn  photo-editor__btn--contrast" type="button"></button>
-            </div>
+            <ul class="photo-editor__controls">
+              <li class="photo-editor__item">
+                <button class="photo-editor__btn  photo-editor__btn--crop" type="button"></button>
 
-            <div class="photo-editor__scale">
-              <div class="photo-editor__toggle"></div>
+                <div class="photo-editor__scale">
+                  <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
+                </div>
+              </li>
+
+              <li class="photo-editor__item">
+                <button class="photo-editor__btn  photo-editor__btn--fill" type="button"></button>
+
+                <div class="photo-editor__scale photo-editor__scale--hidden">
+                  <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
+                </div>
+              </li>
+
+              <li class="photo-editor__item">
+                <button class="photo-editor__btn  photo-editor__btn--contrast" type="button"></button>
+
+                <div class="photo-editor__scale  photo-editor__scale--hidden">
+                  <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="upload__form-btn-wrapper">
+              <button class="upload__form-btn  alternate-btn  alternate-btn--post" type="submit">Запостить</button>
+              <button class="upload__form-btn  alternate-btn  alternate-btn--cancel" type="reset">Отмена</button>
             </div>
           </div>
-
-          <button class="upload__btn  alternate-btn  alternate-btn--post" type="submit">Запостить</button>
-          <button class="upload__btn  alternate-btn  alternate-btn--cancel" type="reset">Отмена</button>
         </form>
       </div>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer  page-footer--photo">
       <div class="page-footer__inner">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
@@ -220,12 +253,12 @@
         </ul>
 
         <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">
-            Разработано
-            <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-          </span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
+            <span class="page-footer__copyright-extend">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
