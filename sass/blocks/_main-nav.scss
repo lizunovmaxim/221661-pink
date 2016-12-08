@@ -47,6 +47,7 @@
   border: none;
   font-size: 0;
   background: transparent url("../img/icon-menu-cross.svg");
+  cursor: pointer;
 
   @include desktop {
     display: none;

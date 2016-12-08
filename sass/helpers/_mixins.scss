@@ -3,11 +3,11 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (min-width: #{$tablet-width}) {
+  @media all and (min-width: #{$tablet-width}) {
     width: 620px;
   }
 
-  @media (min-width: #{$desktop-width}) {
+  @media all and (min-width: #{$desktop-width}) {
     width: 940px;
   }
 }

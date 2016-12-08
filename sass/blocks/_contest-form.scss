@@ -298,6 +298,7 @@
   padding: 7px 0 8px 69px;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -337,6 +338,7 @@
   padding: 7px 0 8px 69px;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -450,6 +452,7 @@
 
 .contest-form__btn {
   min-width: 280px;
+  cursor: pointer;
 
   @include tablet {
     min-width: 300px;

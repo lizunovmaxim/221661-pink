@@ -1,7 +1,7 @@
 .alternate-btn {
   display: block;
   box-sizing: border-box;
-  padding: 11px 10px 14px 10px;
+  padding: 11px 10px 14px;
   font: {
     size: 18px;
     weight: 700;
@@ -11,6 +11,7 @@
   border: 3px solid;
   border-radius: 50px;
   background-color: transparent;
+  cursor: pointer;
 
   &--download {
     border-color: #ffffff;
