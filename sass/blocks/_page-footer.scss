@@ -35,15 +35,16 @@
     align-items: flex-start;
     padding-top: 85px;
     padding-bottom: 37px;
+
+    &--main-page {
+      display: flex;
+      padding-top: 35px;
+    }
   }
 
   @include desktop {
     padding-top: 70px;
     padding-bottom: 72px;
-
-    &--main-page {
-      display: flex;
-    }
   }
 }
 
@@ -86,7 +87,7 @@
   padding: 8px 37px 6px 0;
   text-decoration: none;
   color: $primary-dark;
-  background: url("../img/htmlacademy.svg") no-repeat 94px 2px / 41px;
+  background: url("../img/htmlacademy.svg") no-repeat 94px 2px / 41px 41px;
 
   @include desktop {
     background-position-x: 121px;

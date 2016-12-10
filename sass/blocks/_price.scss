@@ -47,8 +47,8 @@
   padding-bottom: 19px;
   text-align: center;
   border: 2px solid $secondary-light;
-  border-bottom-color: $primary-dark;
   background-color: $primary-dark;
+  background-clip: padding-box;
 
   &--extend {
     display: none;
@@ -57,8 +57,8 @@
   &--popular::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     width: 74px;
     height: 73px;
     background: url("../img/bg-hit.svg") no-repeat;
@@ -75,24 +75,13 @@
     color: #ffffff;
   }
 
-  &:empty {
-    visibility: hidden;
-    border-bottom-color: $secondary-light;
-    border-right-color: $primary-dark;
-  }
-
   @include tablet {
     min-width: 125px;
     padding-top: 11px;
     padding-bottom: 8px;
-    border-top-color: $primary-dark;
-
-    &:last-child {
-      border-right-color: $primary-dark;
-    }
 
     &--popular::before {
-      top: -2px;
+      top: -1px;
       background-image: url("../img/bg-hit-tablet.svg");
     }
 
@@ -103,6 +92,9 @@
 
     &--extend {
       display: table-cell;
+      background-color: transparent;
+      border-top-color: transparent;
+      border-left-color: transparent;
     }
   }
 
