@@ -40,7 +40,13 @@
     flex-direction: column;
     width: 275px;
     margin: 0;
+    margin-top: 8px;
     padding: 0;
+  }
+
+  @include desktop {
+    width: 410px;
+    margin-top: -4px;
   }
 }
 
@@ -48,6 +54,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba($primary-dark, 0.1);
+  }
+
+  @include desktop {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .photo-editor__btn {
@@ -71,6 +88,23 @@
     background-image: url("../img/icon-editor-contrast.svg");
     background-position: 4px 8px;
   }
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+    margin-left: 3px;
+    background-size: cover;
+
+    &--contrast {
+      background-size: 70%;
+      background-position-y: 4px;
+    }
+  }
+
+  @include desktop {
+    width: 48px;
+    height: 47px;
+  }
 }
 
 .photo-editor__scale {
@@ -89,10 +123,17 @@
     position: relative;
     bottom: auto;
     left: auto;
+    width: 200px;
+    margin-right: 18px;
 
     &--hidden {
       display: block;
     }
+  }
+
+  @include desktop {
+    width: 289px;
+    margin-right: 28px;
   }
 }
 
@@ -109,5 +150,33 @@
 
   &--crop {
     right: 35px;
+  }
+
+  @include tablet {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      right: 163px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+
+  @include desktop {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 27px;
+    }
+
+    &--contrast {
+      right: 114px;
+    }
   }
 }

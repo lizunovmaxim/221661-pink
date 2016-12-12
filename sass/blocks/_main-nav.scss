@@ -29,6 +29,11 @@
   padding-top: 21px;
   padding-bottom: 25px;
 
+  @include tablet {
+    padding-top: 44px;
+    padding-bottom: 42px;
+  }
+
   @include desktop {
     width: auto;
     margin: 0;

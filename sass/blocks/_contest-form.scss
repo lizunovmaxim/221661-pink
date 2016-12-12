@@ -5,21 +5,23 @@
   }
 
   @include desktop {
-    @include container;
-
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
 .contest-form__fieldset {
   @include container;
 
+  position: relative;
   padding-bottom: 42px;
   border: none;
 
   &--achievement {
+    padding-top: 117px;
     padding-bottom: 47px;
   }
 
@@ -28,10 +30,12 @@
   }
 
   &--app {
+    padding-top: 113px;
     padding-bottom: 47px;
   }
 
   &--emotions {
+    padding-top: 72px;
     padding-bottom: 48px;
   }
 
@@ -40,31 +44,31 @@
 
     &--achievement {
       box-sizing: border-box;
-      padding: 48px 0 53px 58px;
-      margin-top: 57px;
+      padding: 56px 0 53px;
+      margin-top: 65px;
       border: 2px solid $secondary-light;
     }
 
     &--contacts {
       order: 2;
       box-sizing: border-box;
-      margin-top: 57px;
-      padding: 37px 58px 21px 58px;
+      margin-top: 65px;
+      padding: 45px 58px 21px;
       border: 2px solid $secondary-light;
     }
 
     &--app {
       box-sizing: border-box;
-      margin-top: 16px;
-      padding: 48px 0 59px 58px;
+      margin-top: 24px;
+      padding: 56px 0 59px;
       border: 2px solid $secondary-light;
     }
 
     &--emotions {
       order: 4;
       box-sizing: border-box;
-      margin-top: 57px;
-      padding: 37px 58px 51px 58px;
+      margin-top: 65px;
+      padding: 45px 58px 51px;
       border: 2px solid $secondary-light;
     }
   }
@@ -78,24 +82,25 @@
     }
 
     &--achievement {
+      padding-left: 58px;
       padding-right: 50px;
       padding-bottom: 7px;
     }
 
     &--contacts {
-      margin-top: 56px;
-      padding-top: 34px;
+      margin-top: 65px;
+      padding-top: 42px;
       padding-bottom: 8px;
     }
 
     &--app {
       width: 435px;
-      margin-top: 0;
-      padding-top: 50px;
+      margin-top: 8px;
+      padding-top: 57px;
     }
 
     &--emotions {
-      padding-top: 34px;
+      padding-top: 42px;
       padding-bottom: 43px;
     }
   }
@@ -118,40 +123,57 @@
 }
 
 .contest-form__legend {
+  position: absolute;
   display: block;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 230px;
-  margin-bottom: 43px;
-  padding-top: 38px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $primary;
 
-  &--app {
-    margin-bottom: 39px;
-  }
-
-  &--emotions {
-    margin-bottom: 16px;
-  }
-
-  &--extend {
+  &--contacts {
     display: none;
   }
 
   @include tablet {
-    width: auto;
-    margin: 0;
+    top: -10px;
     padding: 0 25px;
+    background-color: #ffffff;
 
-    &--extend {
+    &--app {
+      width: 368px;
+    }
+
+    &--contacts {
       display: block;
+      width: 259px;
+    }
+
+    &--achievement {
+      width: 437px;
+    }
+
+    &--emotions {
+      width: 260px;
     }
   }
 }
 
 .contest-form__list {
   @include unlist;
+
+  @include tablet {
+    &--achievements {
+      margin-left: 58px;
+    }
+
+    &--app {
+      margin-left: 58px;
+    }
+  }
 
   @include desktop {
     &--contacts {
@@ -166,6 +188,7 @@
       flex-wrap: wrap;
       align-content: space-between;
       height: 165px;
+      margin-left: 0;
     }
   }
 }
@@ -257,7 +280,8 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 20px 14px 20px;
+  min-height: 63px;
+  padding: 15px 20px 14px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $secondary-light;
@@ -269,6 +293,7 @@
 
   &::-moz-placeholder {
     color: $primary-dark;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
@@ -394,6 +419,7 @@
 
   &::-moz-placeholder {
     color: $primary-dark;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
