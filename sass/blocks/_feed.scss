@@ -92,33 +92,33 @@
 
 .feed__image {
   display: block;
+  width: 280px;
+  height: 180px;
 
   &--popular {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     max-width: none;
+    width: 320px;
+    height: 137px;
   }
 
   @include tablet {
-    // temp
     width: 300px;
     height: 300px;
 
     &--popular {
-      // temp
       width: 700px;
       height: 509px;
     }
   }
 
   @include desktop {
-    // temp
     width: 300px;
     height: 400px;
 
     &--popular {
-      // temp
       width: 1200px;
       height: 506px;
     }
@@ -175,10 +175,12 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $primary;
+  background: url("../img/icon-heart.svg") no-repeat 0 5px;
 
   @include tablet {
     margin-top: 0;
     padding-left: 0;
+    background-position-x: right;
 
     &--popular {
       padding-right: 31px;

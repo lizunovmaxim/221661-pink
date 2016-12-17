@@ -4,6 +4,8 @@
   background-color: #1d2631;
 
   @include tablet {
+    position: relative;
+    z-index: 10;
     width: 660px;
     margin: -554px auto 76px;
     background-color: transparent;

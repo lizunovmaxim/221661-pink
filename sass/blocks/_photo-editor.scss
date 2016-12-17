@@ -18,9 +18,10 @@
 
 .photo-editor__image {
   display: block;
+  width: 280px;
+  height: 374px;
 
   @include tablet {
-    // temp
     width: 300px;
     height: 400px;
   }
@@ -73,7 +74,12 @@
   padding: 0;
   border: none;
   background: transparent no-repeat;
+  opacity: 0.3;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &--crop {
     background-image: url("../img/icon-editor-crop.svg");
@@ -94,8 +100,23 @@
     height: 24px;
     margin-left: 3px;
     background-size: cover;
+    opacity: 1;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--crop {
+      background-image: url("../img/icon-editor-crop-active.svg");
+    }
+
+    &--fill {
+      background-image: url("../img/icon-editor-fill-active.svg");
+    }
 
     &--contrast {
+      background-image: url("../img/icon-editor-contrast-active.svg");
       background-size: 70%;
       background-position-y: 4px;
     }
@@ -104,6 +125,22 @@
   @include desktop {
     width: 48px;
     height: 47px;
+  }
+}
+
+.photo-editor__btn--active.photo-editor__btn {
+  opacity: 1;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-active.svg");
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-active.svg");
   }
 }
 

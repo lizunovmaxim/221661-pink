@@ -232,18 +232,20 @@
         height: 63px;
         border-radius: 3px;
         background-color: $secondary-light;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
 
     &--phone {
-      &::before {
-        // tbd
+      &::after {
+        background-image: url("../img/icon-phone.svg");
       }
     }
 
     &--mail {
-      &::before {
-        // tbd
+      &::after {
+        background-image: url("../img/icon-mail.svg");
       }
     }
   }
@@ -351,7 +353,7 @@
   left: 9px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-pink.svg");
 }
 
 .contest-form__radio {
