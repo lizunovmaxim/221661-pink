@@ -1,6 +1,6 @@
 var mainNavigation = new Menu(document.querySelector('.main-nav'));
 
-//mainNavigation.toggle();
+mainNavigation.toggle();
 
 function Menu(elem) {
   var menu = elem;
