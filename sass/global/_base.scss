@@ -9,11 +9,11 @@ body {
   color: $primary-dark;
 
   @include tablet {
-    min-width: 700px;
+    min-width: 660px;
   }
 
   @include desktop {
-    min-width: 980px;
+    min-width: 960px;
   }
 }
 

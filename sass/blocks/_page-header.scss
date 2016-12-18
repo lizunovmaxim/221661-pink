@@ -15,7 +15,6 @@
   }
 
   @include desktop {
-    overflow: hidden;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px 853px;
     background-position-y: 12px;
@@ -54,20 +53,20 @@
 }
 
 .page-header__demo-wrapper {
+  overflow: hidden;
   width: 320px;
   margin: 109px auto 0;
   line-height: 0;
-  overflow: hidden;
 
   @include tablet{
     position: relative;
     z-index: 5;
-    width: 700px;
+    width: 660px;
     margin-top: 73px;
   }
 
   @include desktop {
-    width: 1050px;
+    width: 960px;
     margin-top: 98px;
   }
 }
@@ -76,11 +75,13 @@
   width: 258px;
 
   @include tablet{
+    max-width: none;
     width: 700px;
+    margin-left: -20px;
   }
 
   @include desktop {
     width: 1050px;
-    margin-left: 71px;
+    margin-left: 27px;
   }
 }

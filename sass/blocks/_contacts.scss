@@ -21,8 +21,8 @@
 
   @include desktop {
     &::before {
-      bottom: 400px;
-      height: 103px;
+      bottom: 395px;
+      height: 88px;
     }
   }
 }
@@ -38,7 +38,7 @@
   }
 
   @include desktop {
-    padding-bottom: 16px;
+    padding-bottom: 36px;
   }
 }
 
@@ -168,7 +168,7 @@
   }
 
   @include desktop {
-    min-height: 502px;
+    min-height: 482px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-size: 1200px 976px;
     background-position-y: -300px;

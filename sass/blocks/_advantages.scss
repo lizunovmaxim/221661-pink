@@ -270,11 +270,11 @@
   @include desktop {
     padding-top: 157px;
     background-size: 298px 345px;
-    background-position-y: 66px;
+    background-position: 11px 66px;
 
     &::before {
       top: 135px;
-      left: 43px;
+      left: 33px;
       width: 253px;
       height: 253px;
       padding-top: 91px;
