@@ -14,6 +14,7 @@
 }
 
 .main-nav__wrapper {
+  position: relative;
   @include desktop {
     display: flex;
     justify-content: center;
@@ -69,6 +70,7 @@
 
 .main-nav__logo-glasses {
   display: none;
+  transition: all 0.2s linear;
 
   @include tablet {
     &--tablet {
@@ -85,6 +87,10 @@
       display: inline;
     }
   }
+}
+
+.main-nav__logo-word {
+  transition: all 0.2s linear;
 }
 
 .main-nav__logo-shine {
@@ -112,8 +118,10 @@
   padding: 0;
   border: none;
   font-size: 0;
-  background: transparent url("../img/icon-menu-cross.svg");
+  background: transparent url("../img/icon-menu-cross.svg") no-repeat;
   cursor: pointer;
+  transition: all 0.2s linear;
+  outline: none;
 
   &:hover {
     background-image: url("../img/icon-menu-cross-hover.svg");
@@ -191,6 +199,7 @@
 }
 
 .main-nav__link {
+  position: relative;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -203,11 +212,35 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active:not(&--active) {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 
   @include desktop {
     padding-top: 38px;
     padding-bottom: 40px;
     font-weight: 400;
     text-transform: none;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: background 0.2s linear;
+    }
   }
+}
+
+.main-nav__link:hover.main-nav__link--active::after {
+  background-color: $primary;
 }

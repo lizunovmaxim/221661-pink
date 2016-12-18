@@ -143,7 +143,8 @@
   @include desktop {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    margin: 0 auto;
+    width: 933px;
     text-align: center;
   }
 }
@@ -158,16 +159,15 @@
   @include desktop {
     position: relative;
     box-sizing: border-box;
-    width: 300px;
+    width: 292px;
     margin-bottom: 0;
-    padding: 354px 25px 0;
+    padding: 354px 27px 0;
 
     &::before {
       content: "";
       position: absolute;
       top: -4px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
       width: 292px;
       height: 302px;
       background-size: cover;

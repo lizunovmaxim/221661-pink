@@ -58,7 +58,11 @@
 }
 
 .page-footer__logo {
+  transition: all 0.2s linear;
+}
 
+.page-footer__logo-word {
+  transition: all 0.2s linear;
 }
 
 .page-footer__logo-glasses {
@@ -123,6 +127,7 @@
   text-decoration: none;
   color: $primary-dark;
   background: url("../img/logo-htmlacademy.svg") no-repeat right 5px / 28px 35px;
+  transition: all 0.2s linear;
 
   &:hover {
     background-image: url("../img/logo-htmlacademy-hover.svg");

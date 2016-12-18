@@ -7,6 +7,8 @@
   border-radius: 50%;
   background-color: rgba($primary-dark, 0.3);
   cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
 
   &:last-child {
     margin-right: 0;
@@ -19,5 +21,13 @@
   &--active {
     background-color: #ffffff;
     border: 3px solid $primary-dark;
+  }
+
+  &:hover:not(&--active) {
+    background-color: rgba($primary-dark, 0.5);
+  }
+
+  &:active:not(&--active) {
+    background-color: rgba($primary-dark, 0.1);
   }
 }

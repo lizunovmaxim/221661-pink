@@ -140,7 +140,14 @@
 
     &:not(&--popular) {
       flex-direction: column;
-      min-height: 106px;
+      height: 106px;
+      padding-right: 32px;
+    }
+  }
+
+  @include desktop {
+    &--popular {
+      padding-right: 32px;
     }
   }
 }
@@ -180,6 +187,7 @@
   @include tablet {
     margin-top: 0;
     padding-left: 0;
+    line-height: 21px;
     background-position-x: right;
 
     &--popular {

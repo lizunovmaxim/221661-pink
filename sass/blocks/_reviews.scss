@@ -52,6 +52,8 @@
   background-color: transparent;
   cursor: pointer;
   opacity: 0.3;
+  outline: none;
+  transition: opacity 0.2s linear;
 
   &:hover {
     opacity: 0.6;

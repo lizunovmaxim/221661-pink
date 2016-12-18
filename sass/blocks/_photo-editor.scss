@@ -75,6 +75,7 @@
   border: none;
   background: transparent no-repeat;
   opacity: 0.3;
+  outline: none;
   cursor: pointer;
 
   &:hover {
@@ -184,9 +185,14 @@
   border-radius: 50%;
   background-color: $primary-light;
   cursor: pointer;
+  transition: background 0.1s linear;
 
   &--crop {
     right: 35px;
+  }
+
+  &:active {
+    background-color: $primary;
   }
 
   @include tablet {

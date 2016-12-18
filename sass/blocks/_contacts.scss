@@ -4,10 +4,10 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 188px;
+    bottom: 164px;
     display: block;
     width: 100%;
-    height: 33px;
+    height: 37px;
     z-index: 1;
     background: url("../img/bg-triangle-white-footer.svg") no-repeat 0 0 / 100% 100%;
   }
@@ -132,10 +132,24 @@
   line-height: 29px;
   text-decoration: none;
   color: $primary;
+
+  &--mail {
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: $primary-dark;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.3;
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__map {
-  min-height: 220px;
+  min-height: 200px;
   background: #eae6dd url("../img/bg-map-mobile@1x.png") no-repeat center bottom / 320px 421px;
 
   @include retina {
