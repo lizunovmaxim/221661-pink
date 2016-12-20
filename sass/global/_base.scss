@@ -7,14 +7,6 @@ body {
   }
   line-height: 24px;
   color: $primary-dark;
-
-  @include tablet {
-    min-width: 660px;
-  }
-
-  @include desktop {
-    min-width: 960px;
-  }
 }
 
 h1 {

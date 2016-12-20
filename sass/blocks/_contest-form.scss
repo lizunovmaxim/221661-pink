@@ -82,12 +82,14 @@
     }
 
     &--achievement {
+      width: 940px;
       padding-left: 58px;
       padding-right: 50px;
       padding-bottom: 7px;
     }
 
     &--contacts {
+      width: 940px;
       margin-top: 65px;
       padding-top: 42px;
       padding-bottom: 8px;
@@ -100,6 +102,7 @@
     }
 
     &--emotions {
+      width: 940px;
       padding-top: 42px;
       padding-bottom: 43px;
     }
@@ -510,6 +513,7 @@
   }
 
   @include desktop {
+    width: 940px;
     margin-top: 65px;
     padding: 0;
   }

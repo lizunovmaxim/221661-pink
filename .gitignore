@@ -7,4 +7,6 @@
 *.sublime*
 css/*.css
 node_modules/
+img/overlay
+js/overlay.js
 Thumbs.db
