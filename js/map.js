@@ -1,5 +1,5 @@
 function initMap() {
-  var mapPosition = {lat: 59.93635, lng: 30.32104};
+  var mapPosition = {lat: 59.93643, lng: 30.32104};
   var markerPosition = {lat: 59.93610, lng: 30.32104};
 
   var map = new google.maps.Map(document.getElementById('contacts-map'), {

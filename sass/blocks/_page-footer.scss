@@ -48,13 +48,53 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
   margin-bottom: 39px;
   line-height: 0;
 
   @include tablet {
     margin-bottom: 0;
   }
+}
+
+.page-footer__logo {
+  transition: all 0.2s linear;
+}
+
+.page-footer__logo-word {
+  transition: all 0.2s linear;
+}
+
+.page-footer__logo-glasses {
+  &--desktop {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+}
+
+.page-footer__logo-shine {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.page-footer__logo-link:hover .page-footer__logo-word {
+  fill: $primary;
+}
+
+.page-footer__logo-link:active .page-footer__logo-word,
+.page-footer__logo-link:active .page-footer__logo {
+  fill: $primary-dark;
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -82,15 +122,19 @@
 }
 
 .page-footer__copyright-link {
-  position: relative;
   display: block;
   padding: 8px 37px 6px 0;
   text-decoration: none;
   color: $primary-dark;
-  background: url("../img/htmlacademy.svg") no-repeat 94px 2px / 41px 41px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat right 5px / 28px 35px;
+  transition: all 0.2s linear;
 
-  @include desktop {
-    background-position-x: 121px;
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

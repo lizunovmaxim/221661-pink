@@ -4,13 +4,15 @@
   background-color: #1d2631;
 
   @include tablet {
+    position: relative;
+    z-index: 10;
     width: 660px;
     margin: -554px auto 76px;
     background-color: transparent;
   }
 
   @include desktop {
-    width: 960px;
+    width: 940px;
     margin-bottom: 88px;
     margin-top: -663px;
   }
@@ -27,7 +29,7 @@
   }
 
   @include desktop {
-    margin-left: 10px;
+    margin-left: 0;
   }
 }
 

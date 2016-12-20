@@ -82,12 +82,14 @@
     }
 
     &--achievement {
+      width: 940px;
       padding-left: 58px;
       padding-right: 50px;
       padding-bottom: 7px;
     }
 
     &--contacts {
+      width: 940px;
       margin-top: 65px;
       padding-top: 42px;
       padding-bottom: 8px;
@@ -100,6 +102,7 @@
     }
 
     &--emotions {
+      width: 940px;
       padding-top: 42px;
       padding-bottom: 43px;
     }
@@ -225,25 +228,26 @@
       &::after {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2px;
+        right: 2px;
         display: block;
-        width: 62px;
-        height: 63px;
-        border-radius: 3px;
+        width: 60px;
+        height: 59px;
         background-color: $secondary-light;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
 
     &--phone {
-      &::before {
-        // tbd
+      &::after {
+        background-image: url("../img/icon-phone.svg");
       }
     }
 
     &--mail {
-      &::before {
-        // tbd
+      &::after {
+        background-image: url("../img/icon-mail.svg");
       }
     }
   }
@@ -286,6 +290,8 @@
   line-height: 30px;
   border: 2px solid $secondary-light;
   border-radius: 3px;
+  outline: none;
+  transition: all 0.1s linear;
 
   &::-webkit-input-placeholder {
     color: $primary-dark;
@@ -298,6 +304,14 @@
 
   &:-ms-input-placeholder {
     color: $primary-dark;
+  }
+
+  &:hover {
+    border-color: $primary-dark;
+  }
+
+  &:focus {
+    border-color: $primary;
   }
 
   @include tablet {
@@ -336,6 +350,15 @@
     background-color: #ffffff;
     border: 2px solid $secondary-light;
     border-radius: 3px;
+    transition: all 0.1s linear;
+  }
+
+  &:hover::before {
+    border-color: $primary-dark;
+  }
+
+  &:active::before {
+    border-color: $primary;
   }
 
   @include tablet {
@@ -351,7 +374,7 @@
   left: 9px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-pink.svg");
 }
 
 .contest-form__radio {
@@ -377,6 +400,15 @@
     border: 2px solid $secondary-light;
     border-radius: 50%;
     background-color: #ffffff;
+    transition: all 0.1s linear;
+  }
+
+  &:hover::before {
+    border-color: $primary-dark;
+  }
+
+  &:active::before {
+    border-color: $primary;
   }
 
   @include tablet {
@@ -412,6 +444,8 @@
   border: 2px solid $secondary-light;
   border-radius: 3px;
   resize: none;
+  outline: none;
+  transition: all 0.1s linear;
 
   &::-webkit-input-placeholder {
     color: $primary-dark;
@@ -424,6 +458,14 @@
 
   &:-ms-input-placeholder {
     color: $primary-dark;
+  }
+
+  &:hover {
+    border-color: $primary-dark;
+  }
+
+  &:focus {
+    border-color: $primary;
   }
 
   @include tablet {
@@ -471,6 +513,7 @@
   }
 
   @include desktop {
+    width: 940px;
     margin-top: 65px;
     padding: 0;
   }
