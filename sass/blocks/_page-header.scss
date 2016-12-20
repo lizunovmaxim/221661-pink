@@ -1,6 +1,10 @@
 .page-header {
   background: #2c3949 url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom / 700px 462px;
 
+  &--inner-page {
+    background-position: center bottom -222px;
+  }
+
   @include retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -8,6 +12,10 @@
   @include tablet {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px 729px;
+
+    &--inner-page {
+      background-position: center bottom -290px;
+    }
 
     @include retina {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -55,6 +63,7 @@
 .page-header__demo-wrapper {
   overflow: hidden;
   width: 320px;
+  min-height: 286px;
   margin: 109px auto 0;
   line-height: 0;
 
@@ -62,11 +71,13 @@
     position: relative;
     z-index: 5;
     width: 660px;
+    min-height: 545px;
     margin-top: 73px;
   }
 
   @include desktop {
     width: 940px;
+    min-height: 645px;
     margin-top: 98px;
   }
 }
