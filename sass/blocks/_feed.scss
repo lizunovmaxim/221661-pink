@@ -87,6 +87,10 @@
     &:not(&--popular) {
       margin-bottom: 54px;
     }
+
+    &--popular {
+      width: 940px;
+    }
   }
 }
 
